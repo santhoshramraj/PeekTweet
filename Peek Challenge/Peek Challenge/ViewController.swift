@@ -199,13 +199,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         backView.addSubview(loginLabel)
         let logInButton = TWTRLogInButton { (session, error) in
-            if let unwrappedSession = session {
-                let alert = UIAlertController(title: "Logged In",
-                    message: "User \(unwrappedSession.userName) has logged in",
-                    preferredStyle: UIAlertControllerStyle.Alert
-                )
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
+            if session != nil {
+                backView.removeFromSuperview()
                 self.retweet(tweetId)
             } else {
                 NSLog("Login error: %@", error!.localizedDescription);
