@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Peek_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-H9-OyA">
+                                <rect key="frame" x="86" y="92" width="428" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="93" id="18N-Qy-GUb" customClass="TweetCell" customModule="Peek_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="428" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="18N-Qy-GUb" id="l29-kQ-rJ9">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ef-nU-Kwy">
+                                                    <rect key="frame" x="8" y="18" width="56" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="9ef-nU-Kwy" secondAttribute="height" multiplier="1:1" id="N2S-ID-lXE"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJK-dw-dHu">
+                                                    <rect key="frame" x="73" y="17" width="194" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="MpF-Bf-4yu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="MpF-Bf-4yu"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpL-i5-7QS">
+                                                    <rect key="frame" x="73" y="46" width="347" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9ef-nU-Kwy" firstAttribute="top" secondItem="l29-kQ-rJ9" secondAttribute="topMargin" constant="10" id="1Hm-am-Vsn"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="zpL-i5-7QS" secondAttribute="bottom" id="MX4-yi-54y"/>
+                                                <constraint firstItem="pJK-dw-dHu" firstAttribute="top" secondItem="l29-kQ-rJ9" secondAttribute="topMargin" constant="4" id="P8c-oG-Ype"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="9ef-nU-Kwy" secondAttribute="leading" id="SYV-86-BHD"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="pJK-dw-dHu" secondAttribute="trailing" id="U1U-U5-zG5"/>
+                                                <constraint firstItem="pJK-dw-dHu" firstAttribute="leading" secondItem="9ef-nU-Kwy" secondAttribute="trailing" constant="8" id="myU-vt-zlk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="9ef-nU-Kwy" secondAttribute="bottom" constant="10.5" id="uWd-Pi-K1p"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="zpL-i5-7QS" secondAttribute="trailing" constant="2" id="ubb-8f-FDK"/>
+                                                <constraint firstItem="zpL-i5-7QS" firstAttribute="leading" secondItem="9ef-nU-Kwy" secondAttribute="trailing" constant="8" id="wNn-Vs-71C"/>
+                                                <constraint firstItem="zpL-i5-7QS" firstAttribute="top" secondItem="pJK-dw-dHu" secondAttribute="bottom" constant="2" id="z34-EN-gAi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatar" destination="9ef-nU-Kwy" id="iGN-Mt-nTr"/>
+                                            <outlet property="tweet" destination="zpL-i5-7QS" id="7ut-0C-CLI"/>
+                                            <outlet property="userName" destination="pJK-dw-dHu" id="kpd-Tp-WDQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wcG-H9-OyA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="9mB-lM-tpg"/>
+                            <constraint firstItem="wcG-H9-OyA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bzf-1t-HgF"/>
+                            <constraint firstItem="wcG-H9-OyA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Z6w-Xf-au7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wcG-H9-OyA" secondAttribute="bottom" id="vEi-np-8B6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tweetsTable" destination="wcG-H9-OyA" id="oU2-at-nHw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="323"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD8835561CD0545100330A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8835551CD0545100330A9C /* AppDelegate.swift */; };
+		AD8835581CD0545100330A9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8835571CD0545100330A9C /* ViewController.swift */; };
+		AD88355B1CD0545100330A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8835591CD0545100330A9C /* Main.storyboard */; };
+		AD88355D1CD0545100330A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD88355C1CD0545100330A9C /* Assets.xcassets */; };
+		AD8835601CD0545100330A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88355E1CD0545100330A9C /* LaunchScreen.storyboard */; };
+		AD8835681CD056B000330A9C /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8835671CD056B000330A9C /* TweetCell.swift */; };
+		AD8835741CD1476300330A9C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8835731CD1476300330A9C /* LoadingView.swift */; };
+		ADA087EE1CD2D1970024CBED /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA087EA1CD2D1970024CBED /* Fabric.framework */; };
+		ADA087EF1CD2D1970024CBED /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA087EB1CD2D1970024CBED /* TwitterKit.framework */; };
+		ADA087F01CD2D1970024CBED /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADA087EC1CD2D1970024CBED /* TwitterKitResources.bundle */; };
+		ADA087F11CD2D1970024CBED /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA087ED1CD2D1970024CBED /* TwitterCore.framework */; };
+		ADA087F51CD317720024CBED /* PeekTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA087F41CD317720024CBED /* PeekTweet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD8835521CD0545100330A9C /* Peek Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peek Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8835551CD0545100330A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD8835571CD0545100330A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD88355A1CD0545100330A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD88355C1CD0545100330A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD88355F1CD0545100330A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD8835611CD0545100330A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8835671CD056B000330A9C /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		AD8835731CD1476300330A9C /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		ADA087EA1CD2D1970024CBED /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		ADA087EB1CD2D1970024CBED /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		ADA087EC1CD2D1970024CBED /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		ADA087ED1CD2D1970024CBED /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		ADA087F41CD317720024CBED /* PeekTweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeekTweet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD88354F1CD0545100330A9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA087EE1CD2D1970024CBED /* Fabric.framework in Frameworks */,
+				ADA087F11CD2D1970024CBED /* TwitterCore.framework in Frameworks */,
+				ADA087EF1CD2D1970024CBED /* TwitterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD8835491CD0545100330A9C = {
+			isa = PBXGroup;
+			children = (
+				AD8835541CD0545100330A9C /* Peek Challenge */,
+				AD8835531CD0545100330A9C /* Products */,
+				ADA087EA1CD2D1970024CBED /* Fabric.framework */,
+				ADA087EB1CD2D1970024CBED /* TwitterKit.framework */,
+				ADA087EC1CD2D1970024CBED /* TwitterKitResources.bundle */,
+				ADA087ED1CD2D1970024CBED /* TwitterCore.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		AD8835531CD0545100330A9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD8835521CD0545100330A9C /* Peek Challenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD8835541CD0545100330A9C /* Peek Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				AD8835731CD1476300330A9C /* LoadingView.swift */,
+				ADA087F41CD317720024CBED /* PeekTweet.swift */,
+				AD8835551CD0545100330A9C /* AppDelegate.swift */,
+				AD8835571CD0545100330A9C /* ViewController.swift */,
+				AD8835591CD0545100330A9C /* Main.storyboard */,
+				AD8835671CD056B000330A9C /* TweetCell.swift */,
+				AD88355C1CD0545100330A9C /* Assets.xcassets */,
+				AD88355E1CD0545100330A9C /* LaunchScreen.storyboard */,
+				AD8835611CD0545100330A9C /* Info.plist */,
+			);
+			path = "Peek Challenge";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD8835511CD0545100330A9C /* Peek Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8835641CD0545100330A9C /* Build configuration list for PBXNativeTarget "Peek Challenge" */;
+			buildPhases = (
+				AD88354E1CD0545100330A9C /* Sources */,
+				AD88354F1CD0545100330A9C /* Frameworks */,
+				AD8835501CD0545100330A9C /* Resources */,
+				ADA087E91CD2D17E0024CBED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Peek Challenge";
+			productName = "Peek Challenge";
+			productReference = AD8835521CD0545100330A9C /* Peek Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD88354A1CD0545100330A9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Santhosh Ramaraju";
+				TargetAttributes = {
+					AD8835511CD0545100330A9C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LY256PVKMF;
+					};
+				};
+			};
+			buildConfigurationList = AD88354D1CD0545100330A9C /* Build configuration list for PBXProject "Peek Challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD8835491CD0545100330A9C;
+			productRefGroup = AD8835531CD0545100330A9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD8835511CD0545100330A9C /* Peek Challenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD8835501CD0545100330A9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA087F01CD2D1970024CBED /* TwitterKitResources.bundle in Resources */,
+				AD8835601CD0545100330A9C /* LaunchScreen.storyboard in Resources */,
+				AD88355D1CD0545100330A9C /* Assets.xcassets in Resources */,
+				AD88355B1CD0545100330A9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADA087E91CD2D17E0024CBED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run ba908843dfc5c1e7501d92c342c8c6d22718eddc 87ca52f2018e138198fe0ff6ea885a906e20d838f8876b9408462841d6c4f9a2    ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD88354E1CD0545100330A9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8835681CD056B000330A9C /* TweetCell.swift in Sources */,
+				ADA087F51CD317720024CBED /* PeekTweet.swift in Sources */,
+				AD8835581CD0545100330A9C /* ViewController.swift in Sources */,
+				AD8835741CD1476300330A9C /* LoadingView.swift in Sources */,
+				AD8835561CD0545100330A9C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD8835591CD0545100330A9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD88355A1CD0545100330A9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD88355E1CD0545100330A9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD88355F1CD0545100330A9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD8835621CD0545100330A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD8835631CD0545100330A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD8835651CD0545100330A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Peek Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Peek-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Debug;
+		};
+		AD8835661CD0545100330A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Peek Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Peek-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD88354D1CD0545100330A9C /* Build configuration list for PBXProject "Peek Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8835621CD0545100330A9C /* Debug */,
+				AD8835631CD0545100330A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8835641CD0545100330A9C /* Build configuration list for PBXNativeTarget "Peek Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8835651CD0545100330A9C /* Debug */,
+				AD8835661CD0545100330A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD88354A1CD0545100330A9C /* Project object */;
+}
